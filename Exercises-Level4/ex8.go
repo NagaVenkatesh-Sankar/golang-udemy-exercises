@@ -21,4 +21,10 @@ func main() {
 			fmt.Printf("slice value at %d : %v\n", i, s)
 		}
 	}
+
+	if _, ok := m["bond_james"]; ok {
+		fmt.Println("Key found. Delete.")
+		delete(m, "bond_james")
+	}
+	fmt.Println(m)
 }
